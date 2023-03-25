@@ -41,10 +41,8 @@ getConnection()
       throw err;
     }
 
-    // Call the seedDatabase function after connecting to the database
     seedDatabase();
 
-    // Define the 'queries' object here, after getting the connection
     const queries = {
       connection: connection,
       viewAllEmployees: async () => {
@@ -336,7 +334,7 @@ async function addEmployee(queries) {
       manager_id: answers.manager_id || null,
     };
 
-    await queries.addEmployee(newEmployee); // Replace pool.query with queries.addEmployee
+    await queries.addEmployee(newEmployee);
     console.log("Employee added successfully!");
   } catch (err) {
     throw err;
