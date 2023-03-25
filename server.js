@@ -151,8 +151,8 @@ async function startCLI(queries) {
       await addDepartment(queries);
       break;
     case "Quit":
-      await queries.connection.end();
-      break;
+      await queries.connection.release();
+      return;
     default:
       console.log(`Invalid action: ${answer.action}`);
       break;
