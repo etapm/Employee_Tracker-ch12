@@ -51,21 +51,21 @@ To install this project, please follow these steps:
 
 1.  Navigate to the project directory
 
-    ![Note Taker homepage with starting link](/images/1.png)
+    ![root directory](/images/1.png)
 
 2.  Run npm start to start the application
 
-    ![page to create, view, and delete notes](/images/2.png)
+    ![npm start in terminal](/images/2.png)
 
 3.  The application will prompt the user to select from a list of options
 
-    ![sample notes along with how to create notes](/images/3.png)
+    ![sample questions after starting server](/images/3.png)
 
 4.  Select an option from the list, such as viewing all employees, adding an employee, updating an employee's role, and more.
 
 5.  The user will be able to view the information in a table format using the console.table package.
 
-    ![image of created sample note](/images/4.png)
+    ![table after selecting view all employees](/images/4.png)
 
 ## Credits
 
